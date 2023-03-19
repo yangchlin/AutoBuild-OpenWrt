@@ -8,8 +8,8 @@
 name: Build_CR660X
 
 on: 
-   release:
-     types: [published]
+   #release:
+     #types: [published]
 
   # push:
     # branches: 
