@@ -10,7 +10,7 @@
 - 单击 [.github/workflows] 文件夹 on the top of repo and you could see few workflow files, Each for one particular architecture(device).
 - Edit the workflow file you desire，uncomment push section 3 lines together and submit the commit.(Other 2 methods wait you to discover)
 - The build starts automatically. Progress can be viewed on the Actions page.
-- When the build is complete, click the `Artifacts` button in the upper right corner of the Actions page to download the binaries.
-- Default Web Admin IP: `192.168.5.1`, username `root`，password `password`
+- 构建完成后，单击Actions页面右上角的“Artifacts”按钮下载编译好的文件。
+- 默认Web管理 IP: `192.168.5.1`, 用户名 `root`，密码 `password`
 
 [For the details please visit my Y2B Channel (in Chinese) | 视频教程](https://www.youtube.com/c/esirplayground)
