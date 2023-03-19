@@ -26,7 +26,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04              #虚拟机环境:ubuntu-latest，ubuntu-22.04或ubuntu-20.04
+    runs-on: ubuntu-20.04              #虚拟机环境:ubuntu-latest，ubuntu-22.04或ubuntu-20.04
 
     steps:
     - name: Checkout
