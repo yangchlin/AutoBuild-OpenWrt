@@ -1,16 +1,16 @@
 name: 构建 CR660X 系列固件
 
 on: 
-   release:
-     description: 是否需要发布到Release?(不发布也可以到Artifacts下载)
-     default: 'yes'
-     required: false
+   # release:
+     # description: 是否需要发布到Release?(不发布也可以到Artifacts下载)
+     # default: 'yes'
+     # required: false
 
   # push:                             # push 操作
     # branches:                       # 分支
       # - master                      # 主分支
 
-  #schedule:                          # 时间表
+  # schedule:                         # 时间表
   #  - cron: 0 5 22 1/31 * ? *        # 每31天国际时间22点05分，北京时间凌晨3点执行(北京+8)
   
   watch:                              # 监视操作
