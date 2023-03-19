@@ -41,7 +41,8 @@ jobs:
         sudo rm -rf \
           /usr/share/dotnet \
           /etc/mysql \
-          /etc/php
+          /etc/php \
+          /etc/apt/sources.list.d
         sudo -E apt-get -y purge \
           azure-cli \
           ghc* \
