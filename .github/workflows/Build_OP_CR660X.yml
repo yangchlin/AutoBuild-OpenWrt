@@ -1,5 +1,4 @@
-
-name: Build_CR660X
+name: 构建 CR660X 系列固件
 
 on: 
    release:
