@@ -1,31 +1,27 @@
-#=================================================
-# Description: Build OpenWrt using GitHub Actions
-# Lisence: MIT
-# Author: eSirPlayground
-# Youtube Channel: https://goo.gl/fvkdwm 
-#=================================================
 
 name: Build_CR660X
 
 on: 
-   #release:
-     #types: [published]
+   release:
+     description: 是否需要发布到Release?(不发布也可以到Artifacts下载)
+     default: 'yes'
+     required: false
 
-  # push:
-    # branches: 
-      # - master
+  # push:                             # push 操作
+    # branches:                       # 分支
+      # - master                      # 主分支
 
-  #schedule:
-  #  - cron: 0 8 * * 5
+  #schedule:                          # 时间表
+  #  - cron: 0 5 22 1/31 * ? *        # 每31天国际时间22点05分，北京时间凌晨3点执行(北京+8)
   
-  watch:
-    types: [started]
+  watch:                              # 监视操作
+    types: [started]                  # 点击 star 之后
   
   workflow_dispatch:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-22.04              #虚拟机环境:ubuntu-latest，ubuntu-22.04或ubuntu-20.04
 
     steps:
     - name: Checkout
