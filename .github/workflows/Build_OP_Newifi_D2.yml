@@ -19,10 +19,10 @@ on:
     types: [started]                  # 点击 star 之后
   
   workflow_dispatch:
-    release:
-      description: 是否需要发布到Release?(不发布也可以到Artifacts下载)
-      default: 'yes'
-      required: false
+    #release:
+      #description: 是否需要发布到Release?(不发布也可以到Artifacts下载)
+      #default: 'yes'
+      #required: false
 
 jobs:
   build:
